@@ -1,1 +1,1 @@
-Plays fullstory session all day every day
+Chrome extension that plays fullstory session all day every day
