@@ -16,7 +16,7 @@ select_video = function() {
     videos = document.getElementsByClassName('autoplay')
     videos[Math.floor(Math.random()*videos.length)].click();
     check_video_done();
-  }, 5000);
+  }, 3000);
 }
 
 select_video();
