@@ -2,8 +2,10 @@ var running = false
 var fullstory_tab = null
 
 function start_fullstory(){
+  base_url = "https://www.fullstory.com/ui/H7TB/segments/everyone/people"
+  filters = prompt("Enter any URL parameters you'd like to use");
   tab_props = new Object();
-  tab_props.url = "https://www.fullstory.com/ui/H7TB/segments/everyone/people/0";
+  tab_props.url = base_url + filters;
   tab_props.active = true;
   chrome.tabs.create(tab_props, function(tab){
     fullstory_tab = tab;
